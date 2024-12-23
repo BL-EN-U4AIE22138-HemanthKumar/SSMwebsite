@@ -48,26 +48,25 @@
 
 
     <div class="About">
+      <div class="abimg">
+        <img src="Assets/pfp.jpg" alt="Profile Image" class="rounded-circle">
+    </div>
         <section class="ssm">
             <h1>Meet Shri S.S. Mallikarjun</h1>
-            <p>Shri S.S. Mallikarjun, a dynamic leader and dedicated public
-                 servant, currently serves as the Minister for Mines & Geology
-                  and Horticulture in Karnataka. Committed to sustainable
-                   development, he champions eco-friendly practices,
-                    agricultural growth, and rural upliftment across the
-                     state.</p>
+            <p>
+              Shri S.S. Mallikarjun is a seasoned leader, renowned for his unwavering commitment to sustainable development, grassroots empowerment, and innovative governance. Currently serving as Karnataka’s Minister for Mines & Geology and Horticulture, he has consistently strived to align economic progress with environmental stewardship.
+              <span id="moreText" class="hidden">
+                Born on September 22, 1967, in Davanagere, Karnataka, Shri Mallikarjun's journey into public service was inspired by his desire to address the challenges faced by rural communities. With over two decades of political experience, he has become a symbol of progressive leadership, transforming Karnataka into a hub for eco-friendly development and agricultural innovation.
+                As a passionate advocate for sustainable mining, Shri Mallikarjun has introduced groundbreaking policies to mitigate environmental impacts while ensuring economic growth. Simultaneously, his efforts in horticulture have empowered thousands of farmers, enabling them to adopt modern agricultural practices and secure better livelihoods.
+              </span>
+              <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+            </p>
         </section>
-        <div class="abimg">
-            <img src="Assets/profile.png" alt="Profile Image">
-        </div>
     </div>
-        <div class="ppf">
-
-        </div>
         <div class="impact">
 
         </div>
-        <div class="career">
+        <div class="Timeline">
 
         </div>
         <div class="youtube-clips">
@@ -80,6 +79,18 @@
         </footer>
     </div>
     <script>
+        function toggleReadMore() {
+        const moreText = document.getElementById("moreText");
+        const btn = document.querySelector(".read-more-btn");
+
+        if (moreText.classList.contains("hidden")) {
+          moreText.classList.remove("hidden");
+          btn.textContent = "Read Less";
+          } else {
+          moreText.classList.add("hidden");
+          btn.textContent = "Read More";
+          }
+        }
         let slideIndex = 0;
         const slides = document.querySelector('.slides');
         const totalSlides = document.querySelectorAll('.slide').length;
