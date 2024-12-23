@@ -116,17 +116,17 @@ body {
   .caption {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 0; /* Align to the very left of the screen */
+    width: 60%; /* Restrict width to 60% of the screen */
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    max-width: 80%;
-    font-size: 60px;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px; /* Rounded edges only on the right */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
-
+  
   .prev, .next {
     position: absolute;
     top: 50%;
@@ -138,27 +138,29 @@ body {
     padding: 10px;
     z-index: 10;
   }
-
+  
   .prev {
     left: 10px;
   }
-
+  
   .next {
     right: 10px;
   }
-
+  
+  /* Responsive styles for mobile screens */
   @media (max-width: 768px) {
     .prev, .next {
       padding: 5px;
       font-size: 14px;
     }
-
+  
     .caption {
-      font-size: 14px;
-      padding: 8px 12px;
+      font-size: 14px; /* Smaller font size for mobile */
+      padding-left: 20px;
+      padding-right: 20px; /* Adjust padding for smaller screens */
     }
   }
-
+  
 
 .About {
     display: flex;
