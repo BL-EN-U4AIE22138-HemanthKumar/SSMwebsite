@@ -79,5 +79,24 @@
 
         </footer>
     </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+    
+        function showSlide(index) {
+          slideIndex = (index + totalSlides) % totalSlides; // Ensure circular navigation
+          slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    
+        function changeSlide(direction) {
+          showSlide(slideIndex + direction);
+        }
+    
+        // Optional: Auto-slide functionality
+        setInterval(() => {
+          changeSlide(1);
+        }, 3000); // Change slide every 3 seconds
+      </script>
 </body>
 </html>
