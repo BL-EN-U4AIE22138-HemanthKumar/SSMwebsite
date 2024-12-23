@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Optional, adjust spacing for the top bar if needed */
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Or another layout as needed */
+    align-items: center;
+    padding: 10px;
+}
+
+
+.header {
+    text-align: center;
+    padding: 3px 0;
+    background-color: #fdfffc;
+}
+
+.header img {
+    max-width: 250px;
+    height: auto;
+}
+
+.dropbox {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ff9f1c;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-line {
+    width: 100%; /* Or any specific width */
+    height: 100px; /* Or any specific height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .horizontal-line {
+    margin: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%; /* Set the width of the line */
+    height: 2px; /* Set the height (thickness) of the line */
+    background-color: #2ec4b6; /* Set the color of the line */
+  }
+  
+
+.dropbtn:hover {
+    background-color: #011627;
+    color: #fdfffc;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbox:hover .dropdown-content {
+    display: block;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Ensure it fits the screen width */
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative; /* For caption positioning */
+  }
+
+  .slide img {
+    width: 100%; /* Scale image to fit screen width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    max-width: 80%;
+    font-size: 60px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .prev, .next {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .caption {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+
+
+.About {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.About .ssm {
+    flex: 1;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.About h1 {
+    color: #0044cc;
+    text-align: center;
+}
+
+.About p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.abimg {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.abimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .header img {
+        max-width: 200px;
+    }
+
+    .navigation li {
+        font-size: 16px;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+
+    .About {
+        flex-direction: column;
+    }
+
+    .About .ssm {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation li {
+        font-size: 14px;
+    }
+
+    .banner img {
+        max-width: 90%;
+    }
+
+    .About h1 {
+        font-size: 20px;
+    }
+
+    .About p {
+        font-size: 14px;
+    }
+}
