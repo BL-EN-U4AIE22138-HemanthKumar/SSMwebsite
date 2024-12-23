@@ -216,6 +216,123 @@ body {
     text-decoration: underline;
   }
 
+  .footer_section {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    background-color: #1d1d1d; /* Dark background for modern look */
+    color: #f5f5f5; /* Light text for contrast */
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    justify-content: space-between; /* Ensure even spacing between columns */
+    gap: 20px; /* Spacing between items */
+}
+
+.footer_section .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between; /* Adds space between the items */
+    width: 100%; /* Full-width for the container */
+}
+
+.footer_section .col-lg-3 {
+    flex: 1 1 calc(25% - 20px); /* 25% width for 4 columns with spacing */
+    min-width: 200px; /* Ensures proper layout on smaller screens */
+    margin-bottom: 20px; /* Adds spacing between rows */
+}
+
+.footer_section h3,
+.footer_section h1 {
+    color: #ff9f1c; /* Highlight color for headings */
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer_section p,
+.footer_section a {
+    color: #cfcfcf; /* Softer gray for readability */
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer_section a:hover {
+    color: #2ec4b6; /* Interactive hover effect */
+    text-decoration: underline;
+}
+
+.footer_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_menu ul li {
+    margin-bottom: 10px;
+}
+
+.footer_menu ul li a {
+    color: #cfcfcf; /* Text color for links */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer_menu ul li a:hover {
+    color: #2ec4b6; /* Hover effect for links */
+}
+
+.location_text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.location_text ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location_text ul li a {
+    color: #cfcfcf; /* Contact link text color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.location_text ul li a:hover {
+    color: #2ec4b6; /* Hover effect for contact links */
+}
+
+.location_text ul li i {
+    color: #ff9f1c; /* Icon color */
+    font-size: 18px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.footer_text {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer_section .col-lg-3 {
+        flex: 1 1 100%; /* Stack columns on smaller screens */
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_section h3,
+    .footer_section h1 {
+        font-size: 18px;
+    }
+
+    .footer_section p,
+    .footer_section a {
+        font-size: 12px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .header img {
         max-width: 200px;
