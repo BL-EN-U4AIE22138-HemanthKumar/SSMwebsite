@@ -271,8 +271,112 @@ body {
     }
   }
   
+  /*--Impact Section--*/
+  /* Text Styles */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+/* Variables */
+:root {
+  --font-sans: 'Open Sans', sans-serif;
+  --black: #34435E;
+  --white: #ffffff;
+}
+
+/* Base styles */
+.impact {
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0 2em;
+}
+
+main {
+  min-width: 90%;
+  max-width: 70%;
+  margin: auto;
+}
+
+.impact p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #E71D36  0%, #FF9F1C 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 30px;
+  counter-increment: section;
+  position: relative;
+  color: var(--black);
+}
+
+.impact p::before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: var(--black);
+  text-align: center;
+  line-height: 1.25em;
+  color: var(--white);
+  font-size: 1em;
+}
+
+/* Odd number borders */
+.impact p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.impact p:nth-child(odd)::before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+/* Even number borders */
+.impact p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.impact p:nth-child(even)::before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+/* First and last child styles */
+.impact p:first-child {
+  border-top: 0;
+}
+
+.impact p:last-child {
+  border-bottom: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  main {
+    max-width: 95%;
+    padding: 0;
+  }
+
+  .impact p {
+    font-size: 0.9em;
+    padding: 20px;
+    line-height: 1.5em;
+  }
+
+  .impact p::before {
+    height: 1em;
+    width: 1em;
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+}
+/*Impact section end*/
   
-  
+  /*Social media*/
   .Social-container {
     display: flex;
     flex-wrap: wrap;
