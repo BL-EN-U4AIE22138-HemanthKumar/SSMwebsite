@@ -65,7 +65,7 @@ body {
 .blur-load.loaded > img{
   opacity: 1;
 
-}
+} 
 
 .blur-load.loaded::before{
   content:none;
