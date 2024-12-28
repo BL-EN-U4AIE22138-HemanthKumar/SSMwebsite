@@ -13,46 +13,51 @@
     <link rel="stylesheet" href="HomePage CSS.css">
 </head>
 <body>
+
+<!-- Back to top div-->
   <button id="back-to-top" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
-    <div class="header">
-        <header>
-            <img src="Assets/header.png" alt="Header Image" loading="lazy">
-        </header>
-    </div>
-    <div class="top-bar">
+  <div class="header">
+      <header>
+          <img src="Assets/header.png" alt="Header Image" loading="lazy">
+      </header>
+  </div>
+    <!-- Back to top div-->
+  <div class="top-bar">
     <div class="dropbox">
-        <button class="dropbtn"><span class="material-symbols-outlined">
-          menu
-            </span></button>
-        <div class="dropdown-content">
-            <li>Home</li>
-            <li>Events</li>
-            <li><a href="About Page HTML.html" style="text-decoration: none; color: black;">About</a></li>
-            <li>Articles</li>
-        </div>
+      <button class="dropbtn">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+      </button>
+      <div class="dropdown-content">
+        <li>Home</li>
+        <li>Events</li>
+        <li><a href="About Page HTML.html" style="text-decoration: none; color: black;">About</a></li>
+        <li>Articles</li>
+      </div>
     </div>
-    <div class="horizontal-line"></div>
-</div>
+    <div class="horizontal-line">
+    </div>
+  </div>
 
 <div class="banner-over">
-<div class="slideshow-back">
-<div class="slideshow-container">
-    <div class="slides">
-      <div class="slide">
-        <div class="blur-load" style="background-image: url(Assets/banner1-small.jpg);"><img src="Assets/banner1.jpg" loading="lazy" alt="Slide 1">
+  <div class="slideshow-back">
+    <div class="slideshow-container">
+      <div class="slides">
+        <div class="slide">
+          <div class="blur-load" style="background-image: url(Assets/banner1-small.jpg);"><img src="Assets/banner1.jpg" loading="lazy" alt="Slide 1">
         </div>
         <div class="caption">"Showing the path of progress, a beacon for Karnataka!"</div>
-      </div>
-      <div class="slide">
-        <div class="blur-load" style="background-image: url(Assets/banner2-small.jpg);"><img src="Assets/banner2.jpg" loading="lazy" alt="Slide 2"></div>
-        
-        <div class="caption">"Innovation for today, sustainability for tomorrow!"</div>
+        </div>
+          <div class="slide">
+          <div class="blur-load" style="background-image: url(Assets/banner2-small.jpg);"><img src="Assets/banner2.jpg" loading="lazy" alt="Slide 2"></div>
+          <div class="caption">"Innovation for today, sustainability for tomorrow!"</div>
       </div>
     </div>
     <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="changeSlide(1)">&#10095;</button>
   </div>
-</div>
+  </div>
 </div>
 
 
@@ -75,6 +80,7 @@
         </section>
     </div>
 
+<!--Timeline section-->
 <div class="timeline-background">
     <div class="timeline-div">
       <div class="timeline-container">
@@ -123,6 +129,7 @@
   </div>
 </div>
 
+<!--Impact section-->
     <div class="impact-background">
       <div class="impact">
             <h1>Impact</h1>
@@ -144,6 +151,8 @@
         </main>
       </div>
     </div>
+
+<!--Social container-->
     <div class="flex-container">
       <h1>Follow our content on<br> Social Media</h1>
       <div class="flex-container-fb">
@@ -159,9 +168,8 @@
           </div>
       </div>
   </div>
-    </div>
+<!-- footer section start -->
     <div class="footer">
-        <!-- footer section start -->
         <div class="footer_section">
          <div class="container">
              <div class="col-lg-3"> <!-- About Column -->
@@ -195,8 +203,7 @@
      </div>
      
       <!-- footer section end -->
-    </div>
-    <script>
+<script>
 function toggleReadMore() {
   const moreText = document.getElementById("moreText");
   const btnIcon = document.querySelector(".read-more-btn i");
