@@ -83,8 +83,8 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
     font-family: "Times New Roman", serif;
-    background-color: #f8f4e8; /* Subtle off-white background for a classic look */
-    color: #2e2e2e; /* Dark gray for a timeless text color */
+    background-color: #FCF6F5FF; /* Subtle off-white background for a classic look */
+    color: #490b3d; /* Dark gray for a timeless text color */
     margin: 0;
     display: flex;
     flex: 0;
@@ -103,7 +103,7 @@ body {
   .section-title {
     font-size: 1.5rem; /* Larger, elegant font size for titles */
     font-weight: bold;
-    color: #4a4a4a; /* Slightly lighter gray for distinction */
+    color: #f1b814; /* Slightly lighter gray for distinction */
     display: flex;
     margin-bottom: 15px;
     cursor: pointer;
@@ -124,7 +124,7 @@ body {
     border-top: none; /* No border when collapsed */
     overflow: hidden;
     transition: height 0.6s ease, padding-top 0.6s ease, padding-bottom 0.6s ease, border-top 0.6s ease; /* Smooth transition */
-    color: #333333; /* Consistent classic color */
+    color: #000000; /* Consistent classic color */
     
     img {
         max-width: 100%; /* Makes the image responsive to the container */
@@ -139,7 +139,7 @@ body {
     height: auto; /* Allow content to take up natural height when expanded */
     padding-top: 10px; /* Add top padding when expanded */
     padding-bottom: 10px; /* Add bottom padding when expanded */
-    border-top: 2px solid rgb(0, 0, 0); /* Border to show separation */
+    border-top: 3px solid #bd1e51; /* Border to show separation */
   }
 
 /*info*/
@@ -157,6 +157,11 @@ body {
 }
 
 /* Content container */
+
+.content-background{
+    background-color: #F6F4F0;
+}
+
 .content {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -165,7 +170,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 80%; /* Keeps the layout centered */
-    padding-left: 10%;
+    margin-left: 10%;
 }
 
 /* Text section */
@@ -174,7 +179,7 @@ body {
     text-align: left; /* Keep text aligned to the left */
     padding-right: 40px; /* Spacing between text and image */
     font-size: 1.2em; /* Slightly larger text for readability */
-    color: #333; /* Classic dark text color */
+    color: #1a2e45; /* Classic dark text color */
     line-height: 1.6; /* Add spacing between lines for readability */
     h2{
         font-size: 3em;
@@ -201,13 +206,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a sleek look */
 }
 .P-C_section{
-    background-color: rgb(255, 254, 237);
+    background-color: #EFEEEB;
 }
 
 .PCline{
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #009A9C;
 }
 
 .political-career {
@@ -223,6 +228,7 @@ body {
         font-family: "Aboreto", serif;
         font-weight: 400;
         font-style: normal;
+        color: #202329;
     }
 }
 
@@ -236,7 +242,10 @@ body {
 .pc-content {
     margin-top: 20px;
     font-size: 18px; /* Increases the font size for better readability */
-    color: #333; /* Sets a darker color for the text */
+    color: #40434A; /* Sets a darker color for the text */
+    h3{
+        color: #009A9C;
+    }
 }
 
 .pc-content ul {
@@ -259,6 +268,7 @@ body {
         font-family: "Aboreto", serif;
         font-weight: 400;
         font-style: normal;
+        color: #4DA1A9;
 
     }
 }
@@ -267,13 +277,19 @@ body {
     margin-left: 10%;
     width: 80%;
     height: 2px;
-    background: #000;
+    background: #AC8435;
 }
 
 .contributions{
-background-color: cornsilk;
+background-color: #F7F2E9;
 padding-top: 3%;
 padding-bottom: 3%;
+}
+
+.con-head{
+    h1{
+        color: #AC8435;
+    }
 }
 
 .contributions-content{
@@ -282,6 +298,7 @@ padding-bottom: 3%;
     align-items: center;
     padding: 20px;
     font-size: large;
+    color: #403C34;
 }
 
 .con-c1{
@@ -301,7 +318,7 @@ padding-bottom: 3%;
 
 
 .vision-whole-div{
-    background-color: ivory;
+    background-color: #FFFFFF;
 }
 
 .vision-div{
@@ -314,6 +331,7 @@ padding-bottom: 3%;
         font-family: "Aboreto", serif;
         font-weight: 400;
         font-style: normal;
+        color: #13181B;
     }
 }
 
@@ -321,7 +339,7 @@ padding-bottom: 3%;
     margin-left: 10%;
     width: 80%;
     height: 2px;
-    background: #000;
+    background: #EAB75C;
 }
 
 .v-d-1, .v-d-2{
@@ -342,8 +360,10 @@ padding-bottom: 3%;
 .v-d-1-1, .v-d-1-2, .v-d-2-1, .v-d-2-2{
     text-align: justify;
     font-size: large;
+    color: #283339;
     h2{
         text-align: center;
+        color: #283339;
     }
 }
 
