@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Galery CSS.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="Assets-About page\AboutPic.jpg" style="width:100%">
+    <img src="Assets-About page\pfp.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="Assets-About page\AboutPic2.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="Assets-About page\banner2.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="Assets-About page\AboutPic.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="Assets-About page\PCimg.png" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="Assets-About page\banner2.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="Assets-About page\pfp.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+    // Create a modal dynamically
+var modal = document.createElement("div");
+modal.setAttribute("id", "imageModal");
+modal.style.display = "none";
+modal.style.position = "fixed";
+modal.style.zIndex = "1000";
+modal.style.left = "0";
+modal.style.top = "0";
+modal.style.width = "100%";
+modal.style.height = "100%";
+modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+modal.style.justifyContent = "center";
+modal.style.alignItems = "center";
+
+var modalImg = document.createElement("img");
+modalImg.style.maxWidth = "90%";
+modalImg.style.maxHeight = "90%";
+modalImg.style.borderRadius = "10px";
+
+var closeButton = document.createElement("span");
+closeButton.textContent = "×";
+closeButton.style.position = "absolute";
+closeButton.style.top = "20px";
+closeButton.style.right = "30px";
+closeButton.style.color = "#fff";
+closeButton.style.fontSize = "40px";
+closeButton.style.fontWeight = "bold";
+closeButton.style.cursor = "pointer";
+
+// Append modal elements
+modal.appendChild(modalImg);
+modal.appendChild(closeButton);
+document.body.appendChild(modal);
+
+// Open modal on image click
+document.querySelectorAll(".column img").forEach(function (img) {
+  img.addEventListener("click", function () {
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+  });
+});
+
+// Close modal on close button click
+closeButton.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close modal when clicking outside the image
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+</script>
+
+</body>
+</html>
